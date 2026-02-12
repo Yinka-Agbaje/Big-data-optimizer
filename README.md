@@ -26,7 +26,7 @@ By converting generic 'object' strings into categorical types and downcasting fl
 ### 2. High-Value Candidate Filtering
 Implemented a logic-gate to isolate "Senior Talent" (10+ years experience in large-scale enterprises of 1000+ employees). This streamlined the dataset for executive recruiters, reducing data noise.
 
-## 🏛️ Strategic Recommendations
+## 🏛️ Recommendations
 * **Production Implementation:** Apply these type-casting rules at the **Ingestion Layer** of the data pipeline to ensure all incoming training data is natively optimized.
 * **Model Latency:** Expect a 2x - 5x increase in model training speed due to the reduced memory overhead during the gradient descent process.
 
@@ -40,6 +40,14 @@ Implemented a logic-gate to isolate "Senior Talent" (10+ years experience in lar
 | **Data Integrity** | Standard | Ordered (Preserved Hierarchy) |
 
 ---
+
+### 📊 Performance Impact: Memory Reduction
+---
+<p align="center">
+  <img src="images/memory_comparison.png" alt="Memory Usage Comparison" width="100%">
+</p>
+
+*Comparison of memory consumption before and after strategic type-casting and categorical transformation.*
 
 ## 👩‍💻 Author
 **Olayinka Agbaje** | Data Scientist & Engineer
